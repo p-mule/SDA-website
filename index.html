@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SDAfriends</title>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--ink:#14203d;--muted:#55607a;--navy:#10244f;--gold:#f5b800;--line:#d8deeb;--on-navy:#f3f5fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1330;--surface:#12214a;--ink:#eef1f8;--muted:#a9b4d0;--navy:#0d1b3f;--line:#27386b}}
+:root[data-theme="dark"]{--bg:#0a1330;--surface:#12214a;--ink:#eef1f8;--muted:#a9b4d0;--navy:#0d1b3f;--line:#27386b}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{background:var(--navy);color:var(--on-navy);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar{max-width:1000px;margin:auto;padding:12px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px}
+.brand{font:700 1.4rem Georgia,serif;text-decoration:none}
+.brand b{color:var(--gold)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+nav a[aria-current="page"]{background:var(--gold);color:#14203d}
+nav a:not([aria-current]):hover{background:rgba(255,255,255,.12)}
+main{max-width:1000px;margin:auto;padding:0 20px 56px}
+.page{display:none}.page.on{display:block}
+.hero{background:var(--gold);color:#14203d;margin:0 -20px 40px;padding:56px 20px 48px}
+.hero>div{max-width:1000px;margin:auto}
+.hero h1{font-size:clamp(2.6rem,9vw,5.6rem);letter-spacing:-.02em;max-width:11ch}
+.hero p{font-size:1.2rem;max-width:34ch;margin:0 0 24px}
+.btn{display:inline-block;background:#10244f;color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:8px;margin:0 8px 8px 0}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor}
+.card .btn{background:var(--gold);color:#14203d}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin:0 0 48px}
+.stats div{border-top:4px solid var(--gold);padding-top:10px}
+.stats strong{display:block;font:700 2rem Georgia,serif}
+.stats span{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:48px}
+.card{background:var(--surface);border-left:6px solid var(--gold);padding:20px 22px}
+.card h3{font-size:1.3rem}
+.card p{margin:0 0 10px;color:var(--muted)}
+.lead{font-size:1.2rem;max-width:60ch;color:var(--muted)}
+.title{padding:44px 0 8px}
+.title h1{font-size:clamp(2rem,6vw,3.2rem)}
+.list{list-style:none;margin:24px 0;padding:0;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.list h3{font-size:1.15rem;margin:0 0 4px}
+.list small{color:var(--muted)}
+.views{white-space:nowrap;font-weight:700;text-align:right}
+.views small{display:block;font-weight:400}
+.note{background:var(--surface);padding:16px 20px;border-left:6px solid var(--navy);color:var(--muted);max-width:60ch}
+footer{background:var(--navy);color:var(--on-navy);padding:28px 20px calc(28px + env(safe-area-inset-bottom,0px));text-align:center}
+footer p{margin:4px 0;font-size:.95rem}
+@media (max-width:560px){.list li{flex-direction:column;gap:6px}.views{text-align:left}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="brand" href="#home">SDA<b>friends</b></a>
+<nav aria-label="Main">
+<a href="#home">Home</a><a href="#about">About us</a><a href="#news">News</a><a href="#connect">Connect</a>
+</nav></div></header>
+
+<main>
+<section class="page" id="home">
+<div class="hero"><div>
+<h1>Have faith and love.</h1>
+<p>A Seventh-day Adventist community in Zambia sharing the gospel through music, books and courses.</p>
+<a class="btn" href="#about">About us</a><a class="btn alt" href="#news">Latest news</a>
+</div></div>
+<div class="stats">
+<div><strong>52K</strong><span>followers on S.D.A Channel</span></div>
+<div><strong>2.8K</strong><span>followers on Seventh Day Adventist Friends</span></div>
+<div><strong>840</strong><span>YouTube subscribers</span></div>
+<div><strong>128</strong><span>songs and videos on YouTube</span></div>
+</div>
+<h2>Where to find us</h2>
+<div class="grid">
+<div class="card"><h3>S.D.A Channel | Lusaka</h3><p>Our largest Facebook community, based in Chunga, Lusaka, preaching the gospel through books and courses.</p></div>
+<div class="card"><h3>Seventh Day Adventist Friends</h3><p>A Facebook page sharing Pathfinder, camp meeting and prayer stories under the banner “I will Go.”</p></div>
+<div class="card"><h3>SDA Songs Channel</h3><p>Hymns and gospel songs on YouTube, including songs in Chewa.</p></div>
+</div>
+</section>
+
+<section class="page" id="about">
+<div class="title"><h1>About us</h1>
+<p class="lead">SDAfriends brings three Seventh-day Adventist online communities together in one place, so friends and visitors can find everything we share.</p></div>
+<div class="grid">
+<div class="card"><h3>S.D.A Channel | Lusaka</h3><p>Our Facebook page for the Seventh-day Adventist church, based in Chunga, Lusaka. Its message is to have faith and love, and to preach the gospel through books and courses. It also hosts the Adventist Channel community, with 469 members.</p><p>52K followers</p></div>
+<div class="card"><h3>Seventh Day Adventist Friends</h3><p>A Facebook community under the banner “I will Go.” It shares photos and reels about Pathfinders, camp meetings, prayer and stories of people coming to faith.</p><p>2.8K followers</p></div>
+<div class="card"><h3>SDA Songs Channel</h3><p>Our YouTube channel for Adventist hymns and gospel music, from choirs such as The Golden Vocals to hymns sung in Chewa.</p><p>840 subscribers</p></div>
+</div>
+<h2>Our message</h2>
+<p class="lead">Have faith and love. Preach the gospel through books, courses and music. Go where people are.</p>
+</section>
+
+<section class="page" id="news">
+<div class="title"><h1>News</h1>
+<p class="lead">New songs and videos from the SDA Songs Channel, plus featured posts from Facebook.</p></div>
+<ul class="list">
+<li><div><h3>The Golden Vocals: Baya Kubuka, new song</h3><small>Posted about 2 weeks ago, 5:34 minutes</small></div><div class="views">9.2K views</div></li>
+<li><div><h3>SDA hymn in Chewa: Nditengeni</h3><small>Posted about 2 months ago, 4:12 minutes</small></div><div class="views">138 views</div></li>
+<li><div><h3>Famba Mumoyo, sung by the boy with The Golden Vocals</h3><small>Posted about 3 months ago, 3:08 minutes</small></div><div class="views">1.8K views</div></li>
+<li><div><h3>A true SDA member can’t skip this: Happy Sabbath preparations</h3><small>Featured post on S.D.A Channel, March 13</small></div><div class="views"><small>Facebook</small></div></li>
+</ul>
+<p class="note">Follow our Facebook pages for daily updates from the church and the Friends team.</p>
+</section>
+
+<section class="page" id="connect">
+<div class="title"><h1>Connect</h1>
+<p class="lead">Follow us, watch our songs, or call us.</p></div>
+<div class="grid">
+<div class="card"><h3>YouTube</h3><p>SDA Songs Channel (@adventmusicchanel)</p><a class="btn" href="https://www.youtube.com/@adventmusicchanel" rel="noopener">Watch on YouTube</a></div>
+<div class="card"><h3>Facebook</h3><p>S.D.A Channel | Lusaka and Seventh Day Adventist Friends</p><a class="btn" href="https://www.facebook.com/gospelmusicson" rel="noopener">S.D.A Channel</a><a class="btn" href="https://www.facebook.com/profile.php?id=61591485958458" rel="noopener">SDA Friends</a></div>
+<div class="card"><h3>Call us</h3><p>S.D.A Channel: <a href="tel:+260765796926">+260 765796926</a></p><p>SDA Friends: <a href="tel:+260778291380">+260 778291380</a></p></div>
+</div>
+</section>
+</main>
+
+<footer>
+<p><strong>SDAfriends</strong></p>
+<p>Have faith and love. I will go.</p>
+</footer>
+
+<script>
+(function(){
+var pages=["home","about","news","connect"];
+function show(){
+var id=(location.hash||"").replace("#","");
+if(pages.indexOf(id)<0)id="home";
+pages.forEach(function(p){
+document.getElementById(p).classList.toggle("on",p===id);
+});
+document.querySelectorAll("nav a").forEach(function(a){
+if(a.getAttribute("href")==="#"+id)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
+});
+document.title=(id==="home"?"":id.charAt(0).toUpperCase()+id.slice(1)+" - ")+"SDAfriends";
+window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",show);
+show();
+})();
+</script>
+</body>
+</html>
